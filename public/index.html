@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyprland ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container glass-card">
+        <h1>ToDo List</h1>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Пошук завдань...">
+        </div>
+
+        <div class="tabs-section">
+            <button class="tab-button active">Всі</button>
+            <button class="tab-button">В процесі</button>
+            <button class="tab-button">Виконані</button>
+        </div>
+
+        <div class="input-section">
+            <div class="input-row">
+                <input type="text" id="taskInput" placeholder="Що потрібно зробити?">
+                <button id="addButton">Додати</button>
+            </div>
+            
+            <div class="options-row">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="hasDeadline"> 
+                    Додати термін
+                </label>
+                <input type="datetime-local" id="taskDeadline" class="hidden" max="9999-12-31T23:59">
+            </div>
+        </div>
+
+        <div class="info-row">
+            <span class="task-count">Всього: <b id="totalTasks">0</b></span>
+            <button id="deleteAllButton" class="text-button">Видалити всі</button>
+        </div>
+
+        <ul id="taskList">
+        </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
