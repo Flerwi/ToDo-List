@@ -19,7 +19,7 @@ A modern, responsive ToDo List application built with Node.js (Express) and Vani
 
 1. Clone the repository:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/Flerwi/ToDo-List.git
    ```
 
 2. Install dependencies:
